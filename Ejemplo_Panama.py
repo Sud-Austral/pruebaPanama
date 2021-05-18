@@ -313,7 +313,7 @@ def bingNews(pais = "Panama"):
     data["datePublished"] = data["datePublished"].apply(fechaCorrecta)
     data["imagen"] = data["imagen"].apply(reemplazarFinal)
     data[::-1].to_csv("../Datos_Panama/bing/News/Panama.csv",index=False)
-     return
+    return
 
      #************************************Actualizar BING NEWS*******************************************
 #************************************Actualizar Datos de la organizacion*******************************************
