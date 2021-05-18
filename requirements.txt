@@ -6,4 +6,4 @@ tweepy==3.9.0
 azure-ai-formrecognizer
 azure-ai-textanalytics
 wget
-R0==3.6.9
+R0==2.5.1
