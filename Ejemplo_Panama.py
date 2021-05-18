@@ -1,4 +1,4 @@
-import git
+#import git
 import pandas as pd
 import datetime
 import http.client, urllib.request, urllib.parse, urllib.error, base64
