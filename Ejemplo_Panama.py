@@ -1,4 +1,4 @@
-#import git
+import git
 import pandas as pd
 import datetime
 import http.client, urllib.request, urllib.parse, urllib.error, base64
@@ -17,7 +17,7 @@ import http.client, urllib.request, urllib.parse, urllib.error, base64
 import smtplib
 from email.mime.text import MIMEText
 import time
-import R0
+#import R0
 
 #************************************Ciclo general********************************************************
 #************************************Ciclo general********************************************************
@@ -57,7 +57,7 @@ def Ciclo():
 def UpdateDatabase():
     print("Comenzo...")
     try:
-    #    datasetFinalTweet()
+        datasetFinalTweet()
         print("Los tweet se cargaron correctamente...")
     except:
         print("Error al cargar los Tweet")
@@ -313,7 +313,7 @@ def bingNews(pais = "Panama"):
     data["datePublished"] = data["datePublished"].apply(fechaCorrecta)
     data["imagen"] = data["imagen"].apply(reemplazarFinal)
     data[::-1].to_csv("../Datos_Panama/bing/News/Panama.csv",index=False)
-    return
+     return
 
      #************************************Actualizar BING NEWS*******************************************
 #************************************Actualizar Datos de la organizacion*******************************************
